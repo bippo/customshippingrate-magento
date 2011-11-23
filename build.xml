@@ -4,7 +4,7 @@
 	<property file="deploy.properties"/>
 	<property file="development.properties"/>
 	
-	<property name="app.code.community.dir" location="src/app/code/community"/>
+	<property name="app.code.community.dir" location="app/code/community"/>
 	<property name="app.design.dir" location="app/design"/>
 	<property name="app.etc.modules.dir" location="app/etc/modules"/>
 	<property name="locale.dir" location="app/locale"/>
@@ -97,7 +97,8 @@
 		<mkdir dir="${magento.dir}/app/code/community/${extension.module.company}"/>
 		<symlink link="${magento.dir}/app/code/community/${extension.module.company}/" resource="${app.code.community.dir}/${extension.module.company}/${extension.module.name}" failonerror="false"/>
 		<symlink link="${magento.dir}/app/design/adminhtml/default/default/layout/" resource="${app.design.dir}/adminhtml/default/default/layout/${extension.dirname}.xml" failonerror="false"/>
-		<symlink link="${magento.dir}/app/design/adminhtml/default/default/template/" resource="${app.design.dir}/adminhtml/default/default/template/${extension.template.dirname}" failonerror="false"/>
+		<mkdir dir="${magento.dir}/app/design/adminhtml/default/default/template/indust"/>
+		<symlink link="${magento.dir}/app/design/adminhtml/default/default/template/${extension.template.dirname}" resource="${app.design.dir}/adminhtml/default/default/template/${extension.template.dirname}" failonerror="false"/>
 		<copy file="${app.etc.modules.dir}/${extension.module.company}_${extension.module.name}.xml" todir="${magento.dir}/app/etc/modules/" verbose="true"/>
 	</target>
 	   
