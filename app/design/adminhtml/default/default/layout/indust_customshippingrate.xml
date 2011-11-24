@@ -23,17 +23,17 @@
 <layout>
     <adminhtml_sales_order_create_index>
         <reference name="shipping_method">
-            <block type="adminhtml/sales_order_create_shipping_method_form" template="indust/customshippingrate/form_custom.phtml" name="form" />
+            <block type="adminhtml/sales_order_create_shipping_method_form" template="indust_customshippingrate/form_custom.phtml" name="form" />
         </reference> 
     </adminhtml_sales_order_create_index>
     <adminhtml_sales_order_create_load_block_data>
         <reference name="shipping_method">
-            <block type="adminhtml/sales_order_create_shipping_method_form" template="indust/customshippingrate/form_custom.phtml" name="form" />
+            <block type="adminhtml/sales_order_create_shipping_method_form" template="indust_customshippingrate/form_custom.phtml" name="form" />
         </reference> 
     </adminhtml_sales_order_create_load_block_data>
     <adminhtml_sales_order_create_load_block_shipping_method>
         <reference name="shipping_method">
-            <block type="adminhtml/sales_order_create_shipping_method_form" template="indust/customshippingrate/form_custom.phtml" name="form" />
+            <block type="adminhtml/sales_order_create_shipping_method_form" template="indust_customshippingrate/form_custom.phtml" name="form" />
         </reference> 
     </adminhtml_sales_order_create_load_block_shipping_method>
 </layout>
