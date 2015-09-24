@@ -1,4 +1,4 @@
-h1. Admin Custom Shipping Rate
+# Admin Custom Shipping Rate
 
 Original extension: http://www.magentocommerce.com/magento-connect/i960/extension/1477/admin-custom-shipping-rate
 Bippo fork on GitHub: https://github.com/bippo/customshippingrate-magento
@@ -13,13 +13,16 @@ The extension is based on code found in this thread: http://www.magentocommerce.
 
 Thanks go out to szotyi for getting this started and to everyone else that helped test this.
 
-h2. Known Issues
+## Version history
+* 1.5.0 - Original Version from [Admin Custom Shipping Rate](http://www.magentocommerce.com/magento-connect/i960/extension/1477/admin-custom-shipping-rate) on 30 January 2012
+
+## Known Issues
 
 There is a known issue with this extension if you are charging tax on shipping.  As of this writing I have not found a confirmed solution that works for everyone.  Please see this thread for more info:
 
 http://www.magentocommerce.com/boards/viewthread/214206/
 
-h2. Uninstall Instructions
+## Uninstall Instructions
 
 After uninstalling this extension through your Magento Connect Manager, you may have to run the following SQL query on your database. This can be done through phpMyAdmin or equivalent. This may only be necessary in Magento 1.3. I have not found any issue with Magento 1.4 and leaving this info in the database, but your results may vary.
 
