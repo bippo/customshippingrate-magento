@@ -10,9 +10,11 @@
    <description>Adds ability to specify a custom shipping rate and title when creating a new order in backend.</description>
    <license>OSL v3.0</license>
    <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>1.5.1</version>
+   <version>1.5.2</version>
    <stability>beta</stability>
-   <notes>1.5.1 - Added German localization
+   <notes>1.5.2 - Added Spanish localization
+
+1.5.1 - Added German localization
 
 1.5.0 - Added Magento 1.5 compatibility. Stability set to Beta.
 
@@ -94,6 +96,7 @@
          <target>magelocale</target>
          <target>magelocale</target>
          <target>magelocale</target>
+         <target>magelocale</target>
       </target>
       <path>
          <path/>
@@ -103,11 +106,13 @@
          <path>modules/Indust_CustomShippingRate.xml</path>
          <path>de_DE/Indust_CustomShippingRate.csv</path>
          <path>en_US/Indust_CustomShippingRate.csv</path>
+         <path>es_ES/Indust_CustomShippingRate.csv</path>
          <path>fr_FR/Indust_CustomShippingRate.csv</path>
       </path>
       <type>
          <type>file</type>
          <type>dir</type>
+         <type>file</type>
          <type>file</type>
          <type>file</type>
          <type>file</type>
@@ -124,9 +129,11 @@
          <include/>
          <include/>
          <include/>
+         <include/>
       </include>
       <ignore>
          <ignore/>
+         <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>

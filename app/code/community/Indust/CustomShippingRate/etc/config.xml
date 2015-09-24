@@ -22,12 +22,15 @@
  * @version    1.5.1
  * @author     BenRoe, ceefour
  * @source     https://github.com/bippo/customshippingrate-magento
+ * @version    1.5.2
+ * @author     MaWoScha <mawoscha@siempro.co>
+ * @source     https://github.com/MaWoScha/indust_customshippingrate
  */
  -->
 <config>
     <modules>
         <Indust_CustomShippingRate>
-            <version>1.5.1</version>
+            <version>1.5.2</version>
             <depends>
                 <Mage_Shipping />
             </depends>
