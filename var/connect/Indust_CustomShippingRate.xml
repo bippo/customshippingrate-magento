@@ -1,0 +1,135 @@
+<_>
+   <form_key></form_key>
+   <name>Indust_CustomShippingRate</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+      <version_ids>1</version_ids>
+   </version_ids>
+   <summary>Adds ability to specify a custom shipping rate and title when creating a new order in backend.</summary>
+   <description>Adds ability to specify a custom shipping rate and title when creating a new order in backend.</description>
+   <license>OSL v3.0</license>
+   <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
+   <version>1.5.0</version>
+   <stability>beta</stability>
+   <notes>1.5.0 - Added Magento 1.5 compatibility. Stability set to Beta.
+
+1.4.9 - Added Magento 1.4.2.0 compatibility.
+
+1.4.7 - Fixed custom method showing in multi-address checkout. Fixed custom method showing on PayPal Express review page in Magento 1.4.1.0 or higher.
+
+1.4.6 - Fixed multiple currency issue.
+
+1.4.5 - Fixed double price bug. Fixed custom method showing on Paypal Express review page.
+
+1.4.4 - Added Magento 1.4 compatibility. Fixed currency issue.
+
+1.2.2 - Complete rewrite. Includes custom shipping module.
+
+1.0.2 - Fixed issue with shipping amount being applied twice in shopping cart and checkout.
+
+1.0.1 - Removed extra &lt;/label&gt; tag.
+
+1.0.0 - Fixed issue with auto-save. Changed stability to Stable.
+
+0.1.3 - Added auto-save functionality.
+
+0.1.2 - Fixed character encoding in French translation file.
+
+0.1.1 - Added English and French translation files.
+
+0.1.0 - Initial Release.</notes>
+   <authors>
+      <name>
+         <name>Jeff Kieke</name>
+      </name>
+      <user>
+         <user>auto-converted</user>
+      </user>
+      <email>
+         <email>jeffk@industrialtechware.com</email>
+      </email>
+   </authors>
+   <depends_php_min>5.2.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files/>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>mageetc</target>
+         <target>magelocale</target>
+         <target>magelocale</target>
+      </target>
+      <path>
+         <path/>
+         <path>Indust/CustomShippingRate</path>
+         <path>adminhtml/default/default/layout/indust_customshippingrate.xml</path>
+         <path>adminhtml/default/default/template/indust_customshippingrate/form_custom.phtml</path>
+         <path>modules/Indust_CustomShippingRate.xml</path>
+         <path>en_US/Indust_CustomShippingRate.csv</path>
+         <path>fr_FR/Indust_CustomShippingRate.csv</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>file</type>
+         <type>file</type>
+         <type>file</type>
+         <type>file</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
+      </ignore>
+   </contents>
+</_>
