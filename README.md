@@ -15,6 +15,7 @@ Thanks go out to szotyi for getting this started and to everyone else that helpe
 
 ## Version history
 * 1.5.0 - Original Version from [Admin Custom Shipping Rate](http://www.magentocommerce.com/magento-connect/i960/extension/1477/admin-custom-shipping-rate) on 30 January 2012
+* 1.5.1 - German localization added by [BenRoe](https://github.com/BenRoe) on 2 May 2013
 
 ## Known Issues
 
