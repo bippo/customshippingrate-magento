@@ -89,7 +89,8 @@
             <modules>
                 <Indust_CustomShippingRate>
                     <files>
-                        <default>Indust_CustomShippingRate.csv</default>
+                        <customshippingrate>Indust_CustomShippingRate.csv</customshippingrate>
+                        <default>Mage_Shipping.csv</default>
                     </files>
                 </Indust_CustomShippingRate>
             </modules>
