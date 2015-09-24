@@ -1,0 +1,12 @@
+{
+    "name": "mercator/indust_customshippingrate",
+    "type": "magento-module",
+    "description": "Mercator repository for Indust_CustomShippingRate. Allows administrators to set a custom shipping rate for an order.",
+    "homepage": "https://github.com/mercator/indust_customshippingrate",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "package-xml": "package.xml"
+    }
+}
