@@ -1,8 +1,8 @@
 {
-    "name": "mercator/indust_customshippingrate",
+    "name": "bippo/customshippingrate-magento",
     "type": "magento-module",
-    "description": "Mercator repository for Indust_CustomShippingRate. Allows administrators to set a custom shipping rate for an order.",
-    "homepage": "https://github.com/mercator/indust_customshippingrate",
+    "description": "Bippo repository for Indust_CustomShippingRate. Allows administrators to set a custom shipping rate for an order.",
+    "homepage": "https://github.com/bippo/customshippingrate-magento",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
     },
