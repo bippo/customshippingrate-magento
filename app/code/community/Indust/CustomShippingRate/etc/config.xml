@@ -18,12 +18,19 @@
  * @author     Jeff Kieke <jeffk@industrialtechware.com>
  * @copyright  Copyright (c) 2011, Jeff Kieke
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @source     https://github.com/bippo/customshippingrate-magento
+ * @version    1.5.1
+ * @author     BenRoe, ceefour
+ * @source     https://github.com/bippo/customshippingrate-magento
+ * @version    1.5.2/1.5.3
+ * @author     MaWoScha <mawoscha@siempro.co>
+ * @source     https://github.com/MaWoScha/indust_customshippingrate
  */
  -->
 <config>
     <modules>
         <Indust_CustomShippingRate>
-            <version>1.5.0</version>
+            <version>1.5.3</version>
             <depends>
                 <Mage_Shipping />
             </depends>
@@ -85,7 +92,8 @@
             <modules>
                 <Indust_CustomShippingRate>
                     <files>
-                        <default>Indust_CustomShippingRate.csv</default>
+                        <customshippingrate>Indust_CustomShippingRate.csv</customshippingrate>
+                        <default>Mage_Shipping.csv</default>
                     </files>
                 </Indust_CustomShippingRate>
             </modules>
