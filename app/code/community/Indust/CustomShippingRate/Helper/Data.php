@@ -40,7 +40,7 @@ class Indust_CustomShippingRate_Helper_Data extends Mage_Core_Helper_Abstract
         $i = explode(".", $i);
         if ($i[1] == 4 && $i[2] != 0) { // Check for Magento 1.4.1.x or 1.4.2.0
             return true;
-        } else if ($i[1] == 5) { // Check for Magento 1.5.x.x
+        } else if ($i[1] > 4) { // Check for Magento 1.5.x.x and higher
             return true;
         } else {
             return false;
