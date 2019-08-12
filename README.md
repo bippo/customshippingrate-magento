@@ -14,7 +14,7 @@ The extension is based on code found in this thread: http://www.magentocommerce.
 Thanks go out to szotyi for getting this started and to everyone else that helped test this.
 
 ## Version history
-* 1.6.1 - update quote model to allow zero price custom rate, added by [adpeate](https://github.com/adpeate/customshippingrate-magento/commit/e9503353b2187b838b9d021a4c9d9b7e7fb291cf) on 5 September 2017
+* 1.6.1 - update quote model to allow zero price custom rate, added by [adpeate](https://github.com/adpeate/customshippingrate-magento/commit/e9503353b2187b838b9d021a4c9d9b7e7fb291cf) on 2 August 2019
 * 1.6.0 - Complete module rework for Magento 1.9 by [ThomasNegeli](https://github.com/ThomasNegeli/customshippingrate-magento/commit/7aa8bd62fb82e587ee050bdeb31274431561c348) on 5 September 2017
 * 1.5.3 - Portuguese localization added by [MaWoScha](https://github.com/MaWoScha) on 24 September 2015
 * 1.5.2 - Spanish localization added by [MaWoScha](https://github.com/MaWoScha) on 11 November 2014
