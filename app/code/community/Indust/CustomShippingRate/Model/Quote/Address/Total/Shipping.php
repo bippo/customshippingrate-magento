@@ -32,12 +32,12 @@ class Indust_CustomShippingRate_Model_Quote_Address_Total_Shipping extends Mage_
         if ($address->getShippingMethod() == 'customshippingrate_customshippingrate') {
             $address->setCollectShippingRates(true);         // force magento to recollect shipping rates because our form input from backend should be saved
 
-            if ($address->getBaseShippingAmount() > 0) {     // when data is entered in backend order create
+            if ($address->getBaseShippingAmount() >= 0) {    // when data is entered in backend order create
                 Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::BASE_SHIPPING_AMOUNT, $address->getBaseShippingAmount(), true);
             } else {                                         // when order is submitted in backend
                 Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::BASE_SHIPPING_AMOUNT, $address->getOrigData('base_shipping_amount'), true);
             }
-            if ($address->getShippingAmount() > 0) {         // when data is entered in backend order create
+            if ($address->getShippingAmount() >= 0) {        // when data is entered in backend order create
                 Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::SHIPPING_AMOUNT, $address->getShippingAmount(), true);
             } else {                                         // when order is submitted in backend
                 Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::SHIPPING_AMOUNT, $address->getOrigData('shipping_amount'), true);

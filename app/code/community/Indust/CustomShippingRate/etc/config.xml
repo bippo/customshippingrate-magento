@@ -33,7 +33,7 @@
 <config>
     <modules>
         <Indust_CustomShippingRate>
-            <version>1.6.0</version>
+            <version>1.6.1</version>
             <depends>
                 <Mage_Shipping />
             </depends>

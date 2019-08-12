@@ -10,7 +10,7 @@
    <description>Adds ability to specify a custom shipping rate and title when creating a new order in backend.</description>
    <license>OSL v3.0</license>
    <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>1.6.0</version>
+   <version>1.6.1</version>
    <stability>beta</stability>
    <notes>1.6.0 - Complete module rework for Magento 1.9
 
