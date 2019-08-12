@@ -1,0 +1,9 @@
+app/etc/modules/Indust_CustomShippingRate.xml
+app/code/community/Indust/CustomShippingRate
+app/design/adminhtml/default/default/layout/indust_customshippingrate.xml
+app/design/adminhtml/default/default/template/indust_customshippingrate/ app/design/adminhtml/default/default/template/indust_customshippingrate/
+app/locale/de_DE/*.csv  app/locale/de_DE/
+app/locale/en_US/*.csv  app/locale/en_US/
+app/locale/es_ES/*.csv  app/locale/es_ES/
+app/locale/fr_FR/*.csv  app/locale/fr_FR/
+app/locale/pt_PT/*.csv  app/locale/pt_PT/
