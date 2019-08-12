@@ -1,5 +1,5 @@
 {
-    "name": "bippo/customshippingrate-magento",
+    "name": "bippo/customshippingrate_magento",
     "type": "magento-module",
     "description": "Bippo repository for Indust_CustomShippingRate. Allows administrators to set a custom shipping rate for an order.",
     "homepage": "https://github.com/bippo/customshippingrate-magento",
@@ -11,6 +11,9 @@
         {
             "name":"Bippo",
             "email": "info@bippo.co.id"
+        },
+        {
+            "name":"MaWoScha"
         }
     ],
     "require": {

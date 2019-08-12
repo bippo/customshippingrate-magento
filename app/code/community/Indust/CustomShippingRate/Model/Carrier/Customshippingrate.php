@@ -24,6 +24,10 @@ class Indust_CustomShippingRate_Model_Carrier_Customshippingrate
     implements Mage_Shipping_Model_Carrier_Interface
 {
 
+    CONST BASE_SHIPPING_AMOUNT = 'BASE_SHIPPING_AMOUNT_REGISTRY_KEY';
+    CONST SHIPPING_AMOUNT = 'SHIPPING_AMOUNT_REGISTRY_KEY';
+    CONST SHIPPING_DESCRIPTION = 'SHIPPING_DESCRIPTION_REGISTRY_KEY';
+
     protected $_code = 'customshippingrate';
     protected $_isFixed = true;
 
@@ -39,19 +43,27 @@ class Indust_CustomShippingRate_Model_Carrier_Customshippingrate
             return false;
         }
 
-        $result = Mage::getModel('shipping/rate_result');
-
         $method = Mage::getModel('shipping/rate_result_method');
 
         $method->setCarrier($this->_code);
-        $method->setCarrierTitle(Mage::helper('shipping')->__('Custom Carrier'));
+        $method->setCarrierTitle(Mage::helper('shipping')->__('Custom Carrier Title'));
 
         $method->setMethod($this->_code);
-        $method->setMethodTitle(Mage::helper('shipping')->__('Custom Method'));
+        $method->setMethodTitle(Mage::helper('shipping')->__('Custom Method Title'));
 
-        $method->setPrice(0);
+        if (Mage::registry(self::SHIPPING_DESCRIPTION)) {
+            $method->setCarrierTitle(Mage::helper('shipping')->__(''));
+            $method->setMethodTitle(Mage::registry(self::SHIPPING_DESCRIPTION));
+        }
+
+        if (Mage::registry(self::BASE_SHIPPING_AMOUNT)) {
+            $method->setPrice(Mage::registry(self::BASE_SHIPPING_AMOUNT));
+        } else {
+            $method->setPrice(0);
+        }
         $method->setCost(0);
 
+        $result = Mage::getModel('shipping/rate_result');
         $result->append($method);
 
         return $result;
@@ -64,7 +76,7 @@ class Indust_CustomShippingRate_Model_Carrier_Customshippingrate
      */
     public function getAllowedMethods()
     {
-        return array('customshippingrate'=>Mage::helper('shipping')->__('Custom Shipping Rate'));
+        return array('customshippingrate' => Mage::helper('shipping')->__('Custom Shipping Rate'));
     }
 
 }
