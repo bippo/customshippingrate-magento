@@ -25,6 +25,11 @@
         <Indust_CustomShippingRate>
             <active>true</active>
             <codePool>community</codePool>
+            <depends>
+                <Mage_Shipping/>
+                <Mage_Sales/>
+                <Mage_Adminhtml/>
+            </depends>
         </Indust_CustomShippingRate>
     </modules>
 </config>
