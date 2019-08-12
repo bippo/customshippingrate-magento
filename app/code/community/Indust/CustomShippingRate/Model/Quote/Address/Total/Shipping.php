@@ -29,29 +29,26 @@ class Indust_CustomShippingRate_Model_Quote_Address_Total_Shipping extends Mage_
      */
     public function collect(Mage_Sales_Model_Quote_Address $address)
     {
-        $_code = 'customshippingrate_customshippingrate';
+        if ($address->getShippingMethod() == 'customshippingrate_customshippingrate') {
+            $address->setCollectShippingRates(true);         // force magento to recollect shipping rates because our form input from backend should be saved
 
-        $method = $address->getShippingMethod();
-
-        if ($method == $_code) {
-
-            $amountPrice = $address->getQuote()->getStore()->convertPrice($address->getBaseShippingAmount(), false);
-            if (Mage::helper('customshippingrate')->isMage13()) {
-                $address->setShippingAmount($amountPrice);
-                $address->setBaseShippingAmount($address->getBaseShippingAmount(), true);
-                $address->setGrandTotal($address->getGrandTotal() + $address->getShippingAmount());
-                $address->setBaseGrandTotal($address->getBaseGrandTotal() + $address->getBaseShippingAmount());
-            } else {
-                $this->_setAddress($address);
-                $this->_setAmount($amountPrice);
-                $this->_setBaseAmount($address->getBaseShippingAmount());
+            if ($address->getBaseShippingAmount() >= 0) {    // when data is entered in backend order create
+                Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::BASE_SHIPPING_AMOUNT, $address->getBaseShippingAmount(), true);
+            } else {                                         // when order is submitted in backend
+                Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::BASE_SHIPPING_AMOUNT, $address->getOrigData('base_shipping_amount'), true);
+            }
+            if ($address->getShippingAmount() >= 0) {        // when data is entered in backend order create
+                Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::SHIPPING_AMOUNT, $address->getShippingAmount(), true);
+            } else {                                         // when order is submitted in backend
+                Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::SHIPPING_AMOUNT, $address->getOrigData('shipping_amount'), true);
+            }
+            if ($address->getShippingDescription()) {        // when data is entered in backend order create
+                Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::SHIPPING_DESCRIPTION, $address->getShippingDescription(), true);
+            } else {                                         // when order is submitted in backend
+                Mage::register(Indust_CustomShippingRate_Model_Carrier_Customshippingrate::SHIPPING_DESCRIPTION, $address->getOrigData('shipping_description'), true);
             }
 
-            return $this;
-        } else {
-            return parent::collect($address);
         }
-
+        return parent::collect($address);
     }
-
 }
